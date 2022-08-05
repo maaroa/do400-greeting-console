@@ -25,8 +25,8 @@ pipeline{
         stage('Release') {
            steps {
               sh '''
-                 oc project $devuser-greetings
-                 oct start-build greeting-console --follow --wait
+                 oc project otturq-greetings
+                 oc start-build greeting-console --follow --wait
               '''
            }
         }
